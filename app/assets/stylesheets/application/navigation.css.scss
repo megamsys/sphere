@@ -25,7 +25,7 @@ html.logged-in.js a#collapse-menu {
 
 #menu-bar {
   position: relative;
-  background: #ff3520;
+  background: #030303; //old orange dutch color ff3520;
   text-align: left;
   font-size: 1.1em;
   font-weight: 500;
@@ -100,12 +100,8 @@ html.logged-in.js a#collapse-menu {
       background-position: center center;
       background-size: 74px auto;
       background-repeat: no-repeat;
-      background-image: image-url('logo_in_app.png');
+      background-image: image-url('logo_in_app.jpg');
       image-rendering: -moz-crisp-edges;
-    }
-
-    html.svg & > a {
-      background-image: image-url('logo_in_app.svg');
     }
 
     > a:before {
@@ -119,7 +115,7 @@ html.logged-in.js a#collapse-menu {
       }
 
       html.svg & > a {
-        background-image: image-url('logo.svg');
+        background-image: image-url('logo_in_app.jpg');
       }
     }
   }
