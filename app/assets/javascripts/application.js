@@ -1,7 +1,6 @@
 //= require jquery_ujs
 //= require jquery_nested_form
 //= require jquery.minicolors
-//= require turbolinks
 //= require js-routes
 //= require modernizr
 //= require select2

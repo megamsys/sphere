@@ -2,7 +2,7 @@ var current_user, current_organisation, current_locale, websocket_url;
 
 // Temporary disable Turbolinks page cache functionality to solve back-button related problems.
 // TODO: implement real solution for this and other Turbolinks problems and re-enable page cache.
-Turbolinks.pagesCached(0);
+//Turbolinks.pagesCached(0);
 
 APP.init = function() {
   // Load current_user and current_organisation data
@@ -415,7 +415,7 @@ APP.global = {
         }
       },
     });
-  }, 
+  },
   loadTaggingSelect2Box: function() {
     $('.tags-field').each(function() {
       var tagField = $(this);
