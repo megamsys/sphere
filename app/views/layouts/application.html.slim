@@ -5,11 +5,11 @@ html class=("no-js " + (user_signed_in? ? 'logged-in' : 'not-logged-in')) lang=I
     title
       = (content_for?(:page_title) ? sanitize(yield(:page_title), tags: []) : t('default_title')) + " | Cwic"
     = favicon_link_tag "favicon.ico"
-    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all"
     = jquery_include_tag :google
     = jquery_ui_include_tag :google
     = javascript_include_tag "websocket_rails/main" if Object.const_defined?('WebsocketRails')
-    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = javascript_include_tag "application"
     meta name="viewport" content="width=device-width, user-scalable=no"
     meta name="apple-mobile-web-app-capable" content="yes"
     meta name="mobile-web-app-capable" content="yes"
